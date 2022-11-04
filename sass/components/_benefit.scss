@@ -8,6 +8,7 @@
   }
   &__item {
     // width: calc((100% - 90px) / 4);
+    width: 100%;
   }
   &__iconContainer {
     width: 100%;
@@ -26,6 +27,7 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 10px;
+    text-align: center;
   }
   &__alt {
     font-size: 14px;

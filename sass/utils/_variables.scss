@@ -30,8 +30,6 @@ $project-item-shaddow: rgba(0, 0, 0, 0.25);
 $project-description-bg: rgba(33, 150, 243, 0.9);
 $project-text-color: #eeeeee;
 
-
-
 body {
   font-family: 'roboto', sans-serif;
   color: $master-text-color;
@@ -78,6 +76,12 @@ ul {
 
 .list {
   list-style: none;
+}
+
+.image {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .btn {
