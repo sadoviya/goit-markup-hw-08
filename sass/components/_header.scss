@@ -4,6 +4,7 @@
   &__container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
 
   &__navigation {
@@ -11,7 +12,8 @@
     align-items: center;
   }
   &__list {
-    display: flex;
+    // display: flex;
+    display: none;
     align-items: center;
     gap: 50px;
     &--right {
@@ -57,3 +59,12 @@
     margin-right: 10px;
   }
 }
+
+// .icon {
+//   display: inline-block;
+//   width: 1em;
+//   height: 1em;
+//   stroke-width: 0;
+//   stroke: currentColor;
+//   fill: currentColor;
+// }

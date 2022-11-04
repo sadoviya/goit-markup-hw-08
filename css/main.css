@@ -75,12 +75,12 @@ ul {
 .logo {
   font-family: "Raleway";
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 .logo--right {
   margin-right: 93px;
@@ -101,13 +101,14 @@ ul {
 .header__container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .header__navigation {
   display: flex;
   align-items: center;
 }
 .header__list {
-  display: flex;
+  display: none;
   align-items: center;
   gap: 50px;
 }
