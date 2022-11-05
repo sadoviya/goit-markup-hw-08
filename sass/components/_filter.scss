@@ -1,9 +1,11 @@
 .filter {
   &__list {
     display: flex;
+    flex-wrap: wrap;
     gap: 8px;
-    margin-bottom: 50px;
-    justify-content: center;
+    // margin-bottom: 50px;
+    margin-bottom: 40px;
+    // justify-content: center;
   }
 
   &__button {
@@ -15,6 +17,8 @@
     background-color: $light-grey-color;
     min-width: 73px;
     padding: 6px 22px;
+    // додав маржин
+    margin-bottom: 15px;
     transition-property: color, background-color, box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

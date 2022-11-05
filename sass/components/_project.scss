@@ -7,7 +7,8 @@
 
   &__item {
     background-color: $pure-white-color;
-    width: calc((100% - 60px) / 3);
+    // width: calc((100% - 60px) / 3);
+    width: 100%;
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

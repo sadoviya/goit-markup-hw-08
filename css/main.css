@@ -666,9 +666,9 @@ ul {
 
 .filter__list {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
-  margin-bottom: 50px;
-  justify-content: center;
+  margin-bottom: 40px;
 }
 .filter__button {
   font-weight: 500;
@@ -679,6 +679,7 @@ ul {
   background-color: #f5f4fa;
   min-width: 73px;
   padding: 6px 22px;
+  margin-bottom: 15px;
   transition-property: color, background-color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -696,7 +697,7 @@ ul {
 }
 .project__item {
   background-color: #ffffff;
-  width: calc((100% - 60px) / 3);
+  width: 100%;
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
