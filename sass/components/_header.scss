@@ -58,13 +58,19 @@
     fill: currentColor;
     margin-right: 10px;
   }
-}
 
-// .icon {
-//   display: inline-block;
-//   width: 1em;
-//   height: 1em;
-//   stroke-width: 0;
-//   stroke: currentColor;
-//   fill: currentColor;
-// }
+  &__button {
+    display: flex;
+    // justify-content: center;
+    // align-items: center;
+    padding: 10px 0;
+    background-color: $pure-white-color;
+    border: 0px solid transparent;
+    cursor: pointer;
+    fill: $pure-black-color;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+      fill: $accent-site-color;
+    }
+  }
+}
