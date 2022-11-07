@@ -20,7 +20,7 @@
     />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
-  <body class="no-scroll">
+  <body>
     <!-- HEADER  -->
     <header class="header">
       <div class="container header__container">
@@ -57,19 +57,19 @@
           </li>
         </ul>
         <!-- MENU-BUTTON -->
-        <button type="button" class="header__button" data-menu-open>
+        <button type="button" class="header__button" data-menu-open aria-expanded="false" aria-controls="mobile-menu">
           <svg width="40" height="40">
             <use href="./images/sprite.svg#icon-menu-open"></use>
           </svg>
         </button>
       </div>
       <!-- MOBILE-MENU -->
-      <div class="mobile is-hidden" data-menu>
+      <div class="mobile is-hidden" data-menu id="mobile-menu">
         <div class="mobile__container">
           <div>
             <button type="button" class="mobile__button" data-menu-close>
               <svg width="40" height="40">
-                <use href="./images/sprite.svg#icon-menu-open"></use>
+                <use href="./images/sprite.svg#icon-menu-close"></use>
               </svg>
             </button>
             <ul class="mobile__list list">
@@ -189,13 +189,7 @@
           <h2 class="member__text">Наша команда</h2>
           <ul class="member__list list">
             <li class="member__item">
-              <img
-                src="./images/img-3.jpg"
-                class="member__image image"
-                alt="хлопець в окулярах"
-                width="100%"
-                height="auto"
-              />
+              <img src="./images/img-3.jpg" class="member__image" alt="хлопець в окулярах" width="270" height="auto" />
               <div class="member__container">
                 <h3 class="member__title">Ігор Дем'яненко</h3>
                 <p class="member__alt" lang="en">Product Designer</p>
@@ -232,13 +226,7 @@
               </div>
             </li>
             <li class="member__item">
-              <img
-                src="./images/img-4.jpg"
-                class="member__image image"
-                alt="дівчина в окулярах"
-                width="100%"
-                height="260"
-              />
+              <img src="./images/img-4.jpg" class="member__image" alt="дівчина в окулярах" width="270" height="260" />
               <div class="member__container">
                 <h3 class="member__title">Ольга Рєпіна</h3>
                 <p class="member__alt" lang="en">Frontend Developer</p>
@@ -275,13 +263,7 @@
               </div>
             </li>
             <li class="member__item">
-              <img
-                src="./images/img-5.jpg"
-                class="member__image image"
-                alt="хлопець посміхається"
-                width="100%"
-                height="260"
-              />
+              <img src="./images/img-5.jpg" class="member__image" alt="хлопець посміхається" width="270" height="260" />
               <div class="member__container">
                 <h3 class="member__title">Микола Тарасов</h3>
                 <p class="member__alt" lang="en">Marketing</p>
@@ -318,13 +300,7 @@
               </div>
             </li>
             <li class="member__item">
-              <img
-                src="./images/img-6.jpg"
-                class="member__image image"
-                alt="хлопець в окулярах"
-                width="100%"
-                height="260"
-              />
+              <img src="./images/img-6.jpg" class="member__image" alt="хлопець в окулярах" width="270" height="260" />
               <div class="member__container">
                 <h3 class="member__title">Михайло Єрмаков</h3>
                 <p class="member__alt" lang="en">UI Designer</p>

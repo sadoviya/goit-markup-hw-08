@@ -16,6 +16,10 @@ ul {
   padding-left: 0;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .container {
   width: 100%;
   margin: 0 auto;
@@ -42,7 +46,7 @@ ul {
   list-style: none;
 }
 
-.image {
+img {
   display: block;
   max-width: 100%;
   height: auto;
@@ -171,6 +175,8 @@ ul {
   z-index: 1;
   padding: 40px 48px;
   background-color: #ffffff;
+  transform: translateY(0);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mobile__container {
   display: flex;
@@ -247,9 +253,7 @@ ul {
 }
 
 .is-hidden {
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
+  transform: translateY(-100%);
 }
 
 .hero {
