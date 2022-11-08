@@ -6,11 +6,25 @@
   &__container {
     display: flex;
     align-items: baseline;
-    gap: 93px;
+    // for mobile
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+    // for mobile
+    // gap: 93px;
   }
+
+&__logo-address {
+  // for mobile 
+  text-align: center;
+  // for mobile 
+}
 
   &__address {
     margin-top: 20px;
+    // for mobile 
+    // text-align: center;
+    // for mobile 
   }
 
   &__address-item:not(:last-child) {
@@ -35,6 +49,9 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    // for mobile 
+    text-align: center;
+    // for mobile 
     color: $pure-white-color;
     margin-bottom: 20px;
   }
@@ -65,6 +82,13 @@
       background-color: $accent-site-color;
     }
   }
+  &__form {
+    // for mobile
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    // for mobile
+  }
 
   &__label {
     font-weight: 700;
@@ -78,12 +102,19 @@
   &__action-container {
     margin-top: 20px;
     display: flex;
+    // for mobile
+    flex-wrap: wrap;
+    justify-content: center;
+    // for mobile
     gap: 12px;
   }
 
   &__input {
     padding: 15px 16px;
-    width: 358px;
+    // width: 358px;
+    // for mobile 
+    width: 100%;
+    // for mobile 
     background-color: inherit;
     border: 1px solid $footer-input-border;
     border-radius: 4px;

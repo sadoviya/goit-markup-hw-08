@@ -4,10 +4,14 @@
   width: 100%;
   height: 100%;
   z-index: 1;
-  padding: 40px 48px;
+  padding: 8vw 8vw;
+  @media screen and (min-width: 480px) {
+    padding: 40px 48px;
+  }
   background-color: $pure-white-color;
   transform: translateY(0);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 
   &__container {
     display: flex;
@@ -18,14 +22,15 @@
   }
 
   &__link {
-    // font-family: 'Roboto';
-    // font-style: normal;
     font-weight: 500;
     font-size: 40px;
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.02em;
     color: $master-text-color;
+    @media screen and (min-width: 480px) {
+      font-size: 40px;
+    }
     &--active {
       color: $accent-site-color;
     }
@@ -40,21 +45,23 @@
     }
   }
 
-  &__mail {
-    // font-family: 'Roboto';
-    // font-style: normal;
+  &__tel {
     font-weight: 500;
-    font-size: 34px;
+    font-size: 7.5vw;
+    @media screen and (min-width: 480px) {
+      font-size: 34px;
+    }
     line-height: 1.18;
     letter-spacing: 0.02em;
     color: $accent-site-color;
   }
 
-  &__tel {
-    // font-family: 'Roboto';
-    // font-style: normal;
+  &__mail {
     font-weight: 500;
-    font-size: 24px;
+    font-size: 5vw;
+    @media screen and (min-width: 480px) {
+      font-size: 24px;
+    }
     line-height: 1.18;
     letter-spacing: 0.02em;
     color: $slave-text-color;
@@ -62,11 +69,16 @@
 
   &__social-link {
     font-weight: 500;
-    font-size: 18px;
+    font-size: 3.8vw;
+    @media screen and (min-width: 480px) {
+      font-size: 18px;
+      letter-spacing: 0.02em;
+    }
     line-height: 1.22;
-    letter-spacing: 0.02em;
+    letter-spacing: 0em;
     color: $accent-site-color;
     padding-right: 10px;
+
     &--border {
       border-right: 1px solid $form-input-border;
     }
@@ -80,8 +92,6 @@
 
   &__button {
     display: flex;
-    // justify-content: center;
-    // align-items: center;
     padding: 0;
     background-color: $pure-white-color;
     border: 0px solid transparent;
@@ -95,11 +105,11 @@
       fill: $accent-site-color;
     }
   }
-  &__contacts {
+  // &__contacts {
     // display: flex;
     // flex-direction: column;
     // gap: 64px;
-  }
+  // }
 }
 
 .is-hidden {
@@ -108,13 +118,3 @@
   // visibility: hidden;
   transform: translateY(-100%);
 }
-
-// .mobile__button {
-//     position: absolute;
-//     top: 21px;
-//     right: 25px;
-//     background-color: rgba(0,0,0,0);
-//     border: none;
-//     display: block;
-//     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-// }
