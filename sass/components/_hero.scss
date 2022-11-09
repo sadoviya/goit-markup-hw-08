@@ -1,10 +1,10 @@
 .hero {
   // padding-top: 200px;
   // padding-bottom: 200px;
-  // for mobile 
+  // for mobile
   padding-top: 118px;
   padding-bottom: 118px;
-  // for mobile 
+  // for mobile
   text-align: center;
 
   &--image {
@@ -25,11 +25,11 @@
   &__title {
     font-weight: 900;
     // font-size: 44px;
-        // line-height: 1.36;
-    // for mobile 
+    // line-height: 1.36;
+    // for mobile
     font-size: 26px;
     line-height: 1.62;
-    // for mobile 
+    // for mobile
 
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -47,9 +47,9 @@
     background-color: $accent-site-color;
     box-shadow: 0px 4px 4px $box-shadow-color;
     // padding: 10px 32px;
-    // for mobile 
+    // for mobile
     padding: 10px 24px;
-    // for mobile 
+    // for mobile
     margin-top: 30px;
   }
 }

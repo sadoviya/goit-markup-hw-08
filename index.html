@@ -169,7 +169,13 @@
           <h2 class="process__title">Чим ми займаємося</h2>
           <ul class="process__list list">
             <li class="process__item">
-              <img src="./images/img-0.jpg" class="process__image" alt="кодинг" width="370" height="294" />
+              <!-- <img src="./images/img-0.jpg" class="process__image" alt="кодинг" width="370" height="294" /> -->
+              <img
+                srcset="./images/empty.jpg 1w, ./images/img-0.jpg 300w"
+                sizes="(min-width: 600px) 300px, (min-width: 300px) 1px, 100vw"
+                src="./images/img-0.jpg"
+                alt="Десктопні додатки"
+              />
               <p class="process__alt">Десктопні додатки</p>
             </li>
             <li class="process__item">
@@ -483,16 +489,16 @@
       </div>
     </footer>
     <!-- MODAL -->
-    <!-- <div class="backdrop backdrop--hidden" data-modal>
+    <div class="backdrop backdrop--hidden" data-modal>
       <div class="backdrop__container">
         <button type="button" class="backdrop__button" data-modal-close>
           <svg width="11" height="11">
             <use href="./images/sprite.svg#icon-modal-close"></use>
           </svg>
         </button>
-        <p class="backdrop__title">Залиште свої дані, ми вам передзвонимо</p> -->
-    <!-- FORM -->
-    <!-- <form class="form" autocomplete="off">
+        <p class="backdrop__title">Залиште свої дані, ми вам передзвонимо</p>
+        <!-- FORM -->
+        <form class="form" autocomplete="off">
           <div class="form__item">
             <label for="user-name" class="form__label">Ім'я</label>
             <div class="form__wrap">
@@ -539,7 +545,7 @@
           <button type="submit" class="form__button">Відправити</button>
         </form>
       </div>
-    </div> -->
+    </div>
     <!-- SCRIPT  -->
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
