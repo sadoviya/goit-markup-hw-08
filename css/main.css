@@ -295,10 +295,15 @@ img {
   max-width: 1600px;
   background-color: #2f303a;
 }
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero--image {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg@2x.jpg");
+  }
+}
 .hero__title {
   font-weight: 900;
   font-size: 26px;
-  line-height: 1.36;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
@@ -313,7 +318,7 @@ img {
   color: #ffffff;
   background-color: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  padding: 10px 32px;
+  padding: 10px 24px;
   margin-top: 30px;
 }
 
@@ -573,9 +578,9 @@ img {
 .footer__action-container {
   margin-top: 20px;
   display: flex;
+  gap: 20px;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 12px;
 }
 .footer__input {
   padding: 15px 16px;
