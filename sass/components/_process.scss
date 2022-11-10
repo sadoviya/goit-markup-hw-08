@@ -1,4 +1,8 @@
 .process {
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
   &__title {
     font-weight: 700;
     font-size: 36px;
@@ -18,11 +22,11 @@
     position: relative;
   }
 
-  &__image {
-    display: block;
-    max-width: 100%;
-    height: auto;
-  }
+  // &__image {
+  //   display: block;
+  //   max-width: 100%;
+  //   height: auto;
+  // }
 
   &__alt {
     font-weight: 700;

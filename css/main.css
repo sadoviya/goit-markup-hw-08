@@ -286,7 +286,7 @@ img {
   text-align: center;
 }
 .hero--image {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   margin-left: auto;
@@ -297,7 +297,7 @@ img {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero--image {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg-mob_2x.jpg");
   }
 }
 .hero__title {
@@ -356,6 +356,14 @@ img {
   color: #757575;
 }
 
+.process {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .process {
+    display: block;
+  }
+}
 .process__title {
   font-weight: 700;
   font-size: 36px;
@@ -371,11 +379,6 @@ img {
 .process__item {
   width: calc((100% - 60px) / 3);
   position: relative;
-}
-.process__image {
-  display: block;
-  max-width: 100%;
-  height: auto;
 }
 .process__alt {
   font-weight: 700;
@@ -818,6 +821,11 @@ img {
   gap: 8px;
   margin-bottom: 40px;
 }
+@media screen and (max-width: 767px) {
+  .filter__list {
+    max-width: 400px;
+  }
+}
 .filter__button {
   font-weight: 500;
   font-size: 16px;
@@ -827,7 +835,7 @@ img {
   background-color: #f5f4fa;
   min-width: 73px;
   padding: 6px 22px;
-  margin-bottom: 15px;
+  margin-bottom: 7px;
   transition-property: color, background-color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -866,7 +874,8 @@ img {
   height: auto;
 }
 .project__description {
-  padding: 63px 24px;
+  padding: 77px 24px;
+  height: 100%;
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
@@ -879,6 +888,16 @@ img {
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .project__description {
+    padding: 63px 24px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .project__description {
+    padding: 24px 24px;
+  }
 }
 .project__text-container {
   border: 1px solid #eeeeee;

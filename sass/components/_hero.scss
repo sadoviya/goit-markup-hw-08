@@ -8,7 +8,7 @@
   text-align: center;
 
   &--image {
-    background-image: linear-gradient($hero-linear-gradient, $hero-linear-gradient), url(../images/hero-bg.jpg);
+    background-image: linear-gradient($hero-linear-gradient, $hero-linear-gradient), url(../images/hero-bg-mob.jpg);
     background-repeat: no-repeat;
     background-position: center;
     margin-left: auto;
@@ -18,7 +18,8 @@
     max-width: 1600px;
     background-color: $footer-brown-color;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: linear-gradient($hero-linear-gradient, $hero-linear-gradient), url('../images/hero-bg@2x.jpg');
+      background-image: linear-gradient($hero-linear-gradient, $hero-linear-gradient),
+        url('../images/hero-bg-mob_2x.jpg');
     }
   }
 
