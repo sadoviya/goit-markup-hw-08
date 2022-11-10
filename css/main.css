@@ -671,7 +671,7 @@ img {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
@@ -686,6 +686,7 @@ img {
   color: #757575;
   font-size: 12px;
   line-height: 1.16;
+  letter-spacing: 0.03em;
 }
 .form__wrap {
   position: relative;
@@ -783,8 +784,8 @@ img {
   display: flex;
   align-items: center;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: #757575;
 }

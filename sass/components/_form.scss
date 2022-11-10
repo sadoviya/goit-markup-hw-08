@@ -9,6 +9,7 @@
     color: $slave-text-color;
     font-size: 12px;
     line-height: 1.16;
+    letter-spacing: 0.03em;
   }
 
   &__wrap {
@@ -104,8 +105,12 @@
     display: flex;
     align-items: center;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    // font-size: 14px;
+    // line-height: 1.71;
+    // for mobile 
+    font-size: 12px;
+    line-height: 1.16;
+    // for mobile 
     letter-spacing: 0.03em;
     color: $slave-text-color;
   }

@@ -58,7 +58,10 @@
     margin-bottom: 12px;
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    // line-height: 1.15;
+    // for mobile 
+    line-height: 1.5;
+    // for mobile 
     text-align: center;
     letter-spacing: 0.03em;
     color: $master-text-color;
