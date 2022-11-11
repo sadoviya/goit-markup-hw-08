@@ -11,20 +11,20 @@
     justify-content: center;
     gap: 60px;
     // for mobile
-    // gap: 93px;
+
+    @media screen and (min-width: 1200px) {
+      gap: 93px;
+    }
   }
 
   &__logo-address {
-    // for mobile
-    text-align: center;
-    // for mobile
+    @media screen and (max-width: 1199px) {
+      text-align: center;
+    }
   }
 
   &__address {
     margin-top: 20px;
-    // for mobile
-    // text-align: center;
-    // for mobile
   }
 
   &__address-item:not(:last-child) {
@@ -83,11 +83,11 @@
     }
   }
   &__form {
-    // for mobile
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    // for mobile
+    @media screen and (max-width: 767px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 
   &__label {

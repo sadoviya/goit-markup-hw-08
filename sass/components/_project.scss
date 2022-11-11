@@ -7,8 +7,14 @@
 
   &__item {
     background-color: $pure-white-color;
-    // width: calc((100% - 60px) / 3);
     width: 100%;
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 30px) / 2);
+    }
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 60px) / 3);
+    }
+
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -34,15 +40,16 @@
   }
 
   &__description {
-    // padding: 63px 24px;
     padding: 77px 24px;
     @media screen and (min-width: 768px) {
       padding: 63px 24px;
     }
     @media screen and (max-width: 479px) {
       padding: 24px 24px;
-      // font-size: 14px;
+      font-size: 4vw;
     }
+    display: flex;
+    align-items: center;
     height: 100%;
     font-size: 18px;
     line-height: 1.56;
@@ -66,6 +73,9 @@
 
   &__title {
     font-weight: 700;
+@media screen and (max-width: 479px) {
+      font-size: 4vw;
+}
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
