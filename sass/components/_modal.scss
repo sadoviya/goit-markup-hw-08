@@ -30,7 +30,10 @@
     background-color: $pure-white-color;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    padding: 40px;
+    padding: 6vw;
+    @media screen and (min-width: 480px) {
+      padding: 40px;
+    }
   }
 
   &__button {
@@ -57,11 +60,15 @@
     display: block;
     margin-bottom: 12px;
     font-weight: 700;
-    font-size: 20px;
-    // line-height: 1.15;
-    // for mobile 
-    line-height: 1.5;
-    // for mobile 
+    font-size: 5vw;
+    line-height: 1.15;
+    @media screen and (min-width: 480px) {
+      line-height: 1.5;
+      font-size: 20px;
+    }
+    @media screen and (min-width: 1200px) {
+      line-height: 1.15;
+    }
     text-align: center;
     letter-spacing: 0.03em;
     color: $master-text-color;
