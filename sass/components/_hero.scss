@@ -2,9 +2,9 @@
   padding-top: 118px;
   padding-bottom: 118px;
   @media screen and (min-width: 1200px) {
-        padding-top: 200px;
-  padding-bottom: 200px;
-    }
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
   text-align: center;
 
   &--image {
@@ -36,18 +36,18 @@
 
   &__title {
     font-weight: 900;
-    // for mobile
     font-size: 26px;
     line-height: 1.62;
-    // for mobile
     @media screen and (min-width: 1200px) {
       font-size: 44px;
       line-height: 1.36;
+      max-width: 696px;
     }
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: $pure-white-color;
-    max-width: 696px;
+    max-width: 360px;
+    
     margin: 0 auto;
   }
 
@@ -59,10 +59,10 @@
     color: $pure-white-color;
     background-color: $accent-site-color;
     box-shadow: 0px 4px 4px $box-shadow-color;
-    // padding: 10px 32px;
-    // for mobile
     padding: 10px 24px;
-    // for mobile
+    @media screen and (min-width: 1200px) {
+      padding: 10px 32px;
+    }
     margin-top: 30px;
   }
 }
