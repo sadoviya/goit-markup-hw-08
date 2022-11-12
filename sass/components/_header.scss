@@ -12,12 +12,17 @@
     align-items: center;
   }
   &__list {
-    // display: flex;
     display: none;
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
     align-items: center;
     gap: 50px;
     &--right {
       margin-left: auto;
+      @media screen and (min-width: 768px) and (max-width: 1199px) {
+        display: block;
+      }
     }
   }
 
@@ -51,6 +56,10 @@
     }
     &--light {
       color: $slave-text-color;
+      @media screen and (min-width: 768px) and (max-width: 1199px) {
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
     }
   }
 
@@ -61,6 +70,9 @@
 
   &__button {
     display: flex;
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
     // justify-content: center;
     // align-items: center;
     padding: 10px 0;

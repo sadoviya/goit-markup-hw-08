@@ -1,5 +1,7 @@
 .benefit {
-  // padding-bottom: 0;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 0;
+  }
 
   &__list {
     display: flex;
@@ -7,11 +9,15 @@
     gap: 30px;
   }
   &__item {
-    // width: calc((100% - 90px) / 4);
     width: 100%;
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 30px) / 2);
+    }
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 90px) / 4);
+    }
   }
   &__iconContainer {
-    // width: 270px;
     width: 100%;
     height: 120px;
     background-color: $light-grey-color;
